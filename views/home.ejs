@@ -5,7 +5,11 @@
 
 <% posts.forEach(function(post){ %>
 <h1><%=post.title%></h1>
-<p><%=post.content%></p>
+<p><%=post.content.substring(0,80) + " ..."%>
+<a href="/posts/<%=post.title%>">Dive deep!</a>
+</p>
 <% }) %>
+<%# we would truncate our characters in content so that
+article does not look messy %>
 
 <%-include('partials/footer');-%>
