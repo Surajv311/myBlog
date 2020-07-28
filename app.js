@@ -55,11 +55,12 @@ const requestedTitle = _.lowerCase(req.params.parameter); // to convert a single
 posts.forEach(function(post){
 const storedTitle = _.lowerCase(post.title);
 if(storedTitle=== requestedTitle){
-  console.log("Matched!");
+res.render("post",{
+  title: post.title,
+content: post.content
+});
 }
-else{
-  console.log("Error!");
-}
+
 });
 });
 
