@@ -51,7 +51,13 @@ app.post('/compose',function(req,res){
 
 //ROUTUNG PARAMETERS IN EXPRESS
 app.get('/posts/:parameter', function (req, res) {
-  console.log(req.params.parameter);
+var requestedTitle = req.params.parameter;
+posts.forEach(function(post){
+const storedTitle = post.title;
+if(storedTitle=== requestedTitle){
+  console.log("Matched!");
+}
+})
 })
 
 app.listen(3000, function() {
