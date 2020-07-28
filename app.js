@@ -13,13 +13,16 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public"));
+app.use(express.static("public")); // to use ejs
 
 
 
 app.get("/",function(req,res){
-  res.render("home",{startingContent:homeStartingContent});
-console.log(posts);
+  res.render("home",{
+    startingContent:homeStartingContent,
+    posts:posts
+  });
+//console.log(posts);
 });
 
 app.get("/about",function(req,res){
@@ -44,7 +47,7 @@ app.post('/compose',function(req,res){
   res.redirect("/")
 // to redirect to another route
 });
-
+// we must pass the posts[] to "/" to display
 
 
 
