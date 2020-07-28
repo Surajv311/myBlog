@@ -49,7 +49,10 @@ app.post('/compose',function(req,res){
 });
 // we must pass the posts[] to "/" to display
 
-
+//ROUTUNG PARAMETERS IN EXPRESS
+app.get('/posts/:parameter', function (req, res) {
+  console.log(req.params.parameter);
+})
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
