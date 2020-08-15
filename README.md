@@ -8,6 +8,7 @@ Install the necessary pacakges via *npm* like :  <br>
 To run the project :<br>
 Open the terminal in the same directory and run: <br>
 ```nodemon app.js``` <br>
+
 The project can be accessed in your browser at <br>
 ```localhost:3000```
  <br>
