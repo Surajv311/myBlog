@@ -8,11 +8,11 @@ Install the necessary pacakges via *npm* like :  <br>
 To run the project :<br>
 Open the terminal in the same directory and run: <br>
 ```nodemon app.js``` <br>
-The project can be accessed in your browser at 
-##### ```localhost:3000```
+The project can be accessed in your browser at <br>
+```localhost:3000```
  <br>
-To compose an article:
-
+ 
+To compose an article: <br>
 ```localhost:3000/compose```  
 <br>
 
