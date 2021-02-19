@@ -1,4 +1,4 @@
-# Blog-webpage
+# myBlog
 
 ### The following project is built using Nodejs. <br>
 Before cloning and running the project ensure that you have **Nodejs** installed on your PC. <br>
